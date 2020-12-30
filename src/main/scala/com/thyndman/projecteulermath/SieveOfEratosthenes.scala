@@ -1,8 +1,5 @@
 package com.thyndman.projecteulermath
 
-import scala.annotation.tailrec
-
-
 /**
   * A quick way to find primes (@see https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes)
   */
