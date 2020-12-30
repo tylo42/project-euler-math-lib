@@ -11,12 +11,12 @@ object SieveOfEratosthenes {
     primeStreamRecursive(Stream.from(2))
   }
 
-  def primeStreamRecursive(stream: Stream[Int]): Stream[Int] = {
+  private def primeStreamRecursive(stream: Stream[Int]): Stream[Int] = {
     stream.head #:: primeStreamRecursive(stream.tail)
       .filter(isDivisible(stream.head))
   }
 
-  def isDivisible(divisor: Int)(numerator: Int): Boolean = {
+  private def isDivisible(divisor: Int)(numerator: Int): Boolean = {
     numerator % divisor != 0
   }
 }
