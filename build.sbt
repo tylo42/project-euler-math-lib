@@ -4,13 +4,13 @@ lazy val x = (project in file("."))
   .settings(
     name := "project-euler-math-lib",
     organization := "com.thyndman",
-    version := "0.0.2-SNAPSHOT",
+    version := "0.0.2",
     scalaVersion := "2.12.7",
     scalacOptions ++= Seq("-deprecation", "-unchecked", "-feature", "-Xlint"),
-    publishArtifact := false,
+    publishArtifact := true,
     libraryDependencies ++= Seq(
       "org.scalatest" %% "scalatest" % "3.2.2" % "test",
-      
+
       "com.storm-enroute" %% "scalameter" % "0.18" % "bench"
     ),
     resolvers ++= Seq(
