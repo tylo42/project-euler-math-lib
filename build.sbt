@@ -4,7 +4,7 @@ lazy val x = (project in file("."))
   .settings(
     name := "project-euler-math-lib",
     organization := "com.thyndman",
-    version := "0.0.3-SNAPSHOT",
+    version := (version in ThisBuild).value,
     scalaVersion := "2.12.7",
     scalacOptions ++= Seq("-deprecation", "-unchecked", "-feature", "-Xlint"),
     publishArtifact := true,
